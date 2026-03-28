@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0A0A0A;
+  --color-surface: #111111;
+  --color-border: #1E1E1E;
+  --color-text-primary: #F5F0E8;
+  --color-text-muted: #6B6B6B;
+  --color-accent: #C8A97E;
+  --color-accent-dim: #7A5C3A;
+
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-text-primary);
+  
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-dm-sans);
+}
+
+:root {
+  --color-bg: #0A0A0A;
+  --color-surface: #111111;
+  --color-border: #1E1E1E;
+  --color-text-primary: #F5F0E8;
+  --color-text-muted: #6B6B6B;
+  --color-accent: #C8A97E;
+  --color-accent-dim: #7A5C3A;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display), serif;
+}
+
+@layer utilities {
+  .text-display {
+    font-size: clamp(64px, 10vw, 140px);
+    line-height: 1.1;
+  }
+  .text-h1 {
+    font-size: clamp(40px, 6vw, 80px);
+    line-height: 1.1;
+  }
+  .text-h2 {
+    font-size: clamp(28px, 4vw, 52px);
+    line-height: 1.2;
+  }
+  .text-body {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  .text-caption {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+  .page-padding {
+    padding-left: max(24px, 8vw);
+    padding-right: max(24px, 8vw);
+  }
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Lenis defaults */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
