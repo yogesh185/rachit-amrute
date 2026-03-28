@@ -6,7 +6,6 @@ import { gsap } from "@/lib/gsap";
 import SplitText from "@/components/ui/SplitText";
 
 export default function Hero() {
-  const lineRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
 

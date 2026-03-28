@@ -16,7 +16,7 @@ export default function CustomCursor() {
       return;
     }
     
-    setIsDesktop(true);
+    requestAnimationFrame(() => setIsDesktop(true));
     
     const ctx = gsap.context(() => {
       // Setup quick setters for performance

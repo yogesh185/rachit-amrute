@@ -29,7 +29,7 @@ export default function ContactPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
           <h1 className="text-display font-medium leading-[0.9] mb-8">
-            <SplitText text="Let's start a project." delay={0.2} />
+            <SplitText text="Let&apos;s start a project." delay={0.2} />
           </h1>
           <p className="text-text-muted mb-12 flex items-center gap-3">
             <span className="relative flex h-3 w-3">
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   htmlFor="name" 
                   className="absolute left-0 top-4 text-text-muted transition-all duration-300 peer-focus:-top-6 peer-focus:text-caption peer-focus:text-accent peer-valid:-top-6 peer-valid:text-caption peer-valid:text-text-muted cursor-text"
                 >
-                  What's your name?
+                  What&apos;s your name?
                 </label>
               </div>
 
@@ -76,7 +76,7 @@ export default function ContactPage() {
                   htmlFor="email" 
                   className="absolute left-0 top-4 text-text-muted transition-all duration-300 peer-focus:-top-6 peer-focus:text-caption peer-focus:text-accent peer-valid:-top-6 peer-valid:text-caption peer-valid:text-text-muted cursor-text"
                 >
-                  What's your email?
+                  What&apos;s your email?
                 </label>
               </div>
 
@@ -119,7 +119,7 @@ export default function ContactPage() {
                 />
               </svg>
               <h2 className="text-display text-accent">Sent!</h2>
-              <p className="text-h3 text-text-muted">I'll get back to you within 24 hours.</p>
+              <p className="text-h3 text-text-muted">I&apos;ll get back to you within 24 hours.</p>
             </div>
           )}
         </div>

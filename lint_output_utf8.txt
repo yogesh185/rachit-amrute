@@ -1,0 +1,56 @@
+﻿
+> app-temp@0.1.0 lint
+> eslint
+
+
+E:\Portfolio-rachit\app\about\page.tsx
+  54:82   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  54:180  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  57:154  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+E:\Portfolio-rachit\app\contact\page.tsx
+   63:23  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+   79:23  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  122:55  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+E:\Portfolio-rachit\components\layout\CustomCursor.tsx
+  19:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\Portfolio-rachit\components\layout\CustomCursor.tsx:19:5
+  17 |     }
+  18 |     
+> 19 |     setIsDesktop(true);
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  20 |     
+  21 |     const ctx = gsap.context(() => {
+  22 |       // Setup quick setters for performance  react-hooks/set-state-in-effect
+
+E:\Portfolio-rachit\components\layout\Navbar.tsx
+  58:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\Portfolio-rachit\components\layout\Navbar.tsx:58:5
+  56 |   // Close menu on route change
+  57 |   useEffect(() => {
+> 58 |     setIsMenuOpen(false);
+     |     ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  59 |   }, [pathname]);
+  60 |
+  61 |   return (  react-hooks/set-state-in-effect
+
+E:\Portfolio-rachit\components\sections\Hero.tsx
+  9:9  warning  'lineRef' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 9 problems (8 errors, 1 warning)
+

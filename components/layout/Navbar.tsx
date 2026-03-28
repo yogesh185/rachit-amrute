@@ -55,7 +55,7 @@ export default function Navbar() {
 
   // Close menu on route change
   useEffect(() => {
-    setIsMenuOpen(false);
+    requestAnimationFrame(() => setIsMenuOpen(false));
   }, [pathname]);
 
   return (

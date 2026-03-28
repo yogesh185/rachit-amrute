@@ -51,10 +51,10 @@ export default function AboutPage() {
             I am a software engineer and designer who believes in the power of well-crafted digital experiences. With a background in both technical development and visual design, I bring a unique perspective to every project I touch.
           </p>
           <p>
-            My journey started when I built my first website at 14. Since then, I've worked with startups, agencies, and enterprise clients to build scalable applications that don't just work—they feel magical to use.
+            My journey started when I built my first website at 14. Since then, I&apos;ve worked with startups, agencies, and enterprise clients to build scalable applications that don&apos;t just work—they feel magical to use.
           </p>
           <p>
-            I specialize in the React ecosystem, specifically Next.js, and focus heavily on animation and interaction design using GSAP and WebGL. When I'm not coding, you can find me taking photographs or learning about architecture.
+            I specialize in the React ecosystem, specifically Next.js, and focus heavily on animation and interaction design using GSAP and WebGL. When I&apos;m not coding, you can find me taking photographs or learning about architecture.
           </p>
         </div>
         <div className="md:col-span-5 relative h-[600px] hidden md:block">
